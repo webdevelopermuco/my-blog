@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 const withDB = async (operations, res) => {
     try {
 
-        // const urlofmongo = 'mongodb+srv://muco:247600gg@cluster0-xukkc.mongodb.net/test?retryWrites=true&w=majority';
+        // const urlofmongo = 'mongodb+srv://muco:@cluster0-xukkc.mongodb.net/test?retryWrites=true&w=majority';
         const urlofmongo = 'mongodb://localhost:27017';
         const client = await MongoClient.connect(urlofmongo
             , {useNewUrlParser: true});
